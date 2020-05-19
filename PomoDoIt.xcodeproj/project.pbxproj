@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		AAD9B3BB24739617003969C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD9B3BA24739617003969C1 /* AppDelegate.swift */; };
 		AAD9B3BD24739617003969C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD9B3BC24739617003969C1 /* SceneDelegate.swift */; };
-		AAD9B3BF24739617003969C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD9B3BE24739617003969C1 /* ViewController.swift */; };
+		AAD9B3BF24739617003969C1 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD9B3BE24739617003969C1 /* TimerViewController.swift */; };
 		AAD9B3C224739617003969C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD9B3C024739617003969C1 /* Main.storyboard */; };
 		AAD9B3C524739617003969C1 /* PomoDoIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAD9B3C324739617003969C1 /* PomoDoIt.xcdatamodeld */; };
 		AAD9B3C724739619003969C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD9B3C624739619003969C1 /* Assets.xcassets */; };
@@ -31,7 +31,7 @@
 		AAD9B3B724739617003969C1 /* PomoDoIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomoDoIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD9B3BA24739617003969C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAD9B3BC24739617003969C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AAD9B3BE24739617003969C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AAD9B3BE24739617003969C1 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		AAD9B3C124739617003969C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAD9B3C424739617003969C1 /* PomoDoIt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PomoDoIt.xcdatamodel; sourceTree = "<group>"; };
 		AAD9B3C624739619003969C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 			children = (
 				AAD9B3BA24739617003969C1 /* AppDelegate.swift */,
 				AAD9B3BC24739617003969C1 /* SceneDelegate.swift */,
-				AAD9B3BE24739617003969C1 /* ViewController.swift */,
+				AAD9B3BE24739617003969C1 /* TimerViewController.swift */,
 				AAD9B3C024739617003969C1 /* Main.storyboard */,
 				AAD9B3C624739619003969C1 /* Assets.xcassets */,
 				AAD9B3C824739619003969C1 /* LaunchScreen.storyboard */,
@@ -204,7 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAD9B3C524739617003969C1 /* PomoDoIt.xcdatamodeld in Sources */,
-				AAD9B3BF24739617003969C1 /* ViewController.swift in Sources */,
+				AAD9B3BF24739617003969C1 /* TimerViewController.swift in Sources */,
 				AAD9B3BB24739617003969C1 /* AppDelegate.swift in Sources */,
 				AAD9B3BD24739617003969C1 /* SceneDelegate.swift in Sources */,
 			);
