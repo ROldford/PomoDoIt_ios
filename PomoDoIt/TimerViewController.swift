@@ -46,7 +46,20 @@ class TimerViewController: UIViewController {
         btnTimer.setTitle(timerBtnState.rawValue, for: .normal)
         
     }
-
-
+    
+    @IBAction func timerButtonPress(_ sender: UIButton) {
+        switch timerBtnState {
+        case .start:
+            timerBtnState = .pause
+        case .pause:
+            timerBtnState = .resume
+        case .resume:
+            timerBtnState = .pause
+//        default:
+//            fatalError("Unexpected button state: \(timerBtnState)")
+        }
+        btnTimer.setTitle(timerBtnState.rawValue, for: .normal)
+    }
+    
 }
 

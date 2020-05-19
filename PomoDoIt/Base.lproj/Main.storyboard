@@ -45,6 +45,9 @@
                                 <rect key="frame" x="165" y="643.5" width="84" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Pause"/>
+                                <connections>
+                                    <action selector="timerButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jnA-ow-dJu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OiB-83-slV">
                                 <rect key="frame" x="158" y="821" width="98" height="41"/>
