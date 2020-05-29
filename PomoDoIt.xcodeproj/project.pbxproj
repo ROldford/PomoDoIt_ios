@@ -15,6 +15,7 @@
 		AAD9B3C724739619003969C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD9B3C624739619003969C1 /* Assets.xcassets */; };
 		AAD9B3CA24739619003969C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD9B3C824739619003969C1 /* LaunchScreen.storyboard */; };
 		AAD9B3D524739619003969C1 /* PomoDoItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD9B3D424739619003969C1 /* PomoDoItTests.swift */; };
+		AAD9B3E02474608B003969C1 /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD9B3DF2474608B003969C1 /* TimerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		AAD9B3D024739619003969C1 /* PomoDoItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomoDoItTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD9B3D424739619003969C1 /* PomoDoItTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoDoItTests.swift; sourceTree = "<group>"; };
 		AAD9B3D624739619003969C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAD9B3DF2474608B003969C1 /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				AAD9B3BA24739617003969C1 /* AppDelegate.swift */,
 				AAD9B3BC24739617003969C1 /* SceneDelegate.swift */,
 				AAD9B3BE24739617003969C1 /* TimerViewController.swift */,
+				AAD9B3DF2474608B003969C1 /* TimerModel.swift */,
 				AAD9B3C024739617003969C1 /* Main.storyboard */,
 				AAD9B3C624739619003969C1 /* Assets.xcassets */,
 				AAD9B3C824739619003969C1 /* LaunchScreen.storyboard */,
@@ -206,6 +209,7 @@
 				AAD9B3C524739617003969C1 /* PomoDoIt.xcdatamodeld in Sources */,
 				AAD9B3BF24739617003969C1 /* TimerViewController.swift in Sources */,
 				AAD9B3BB24739617003969C1 /* AppDelegate.swift in Sources */,
+				AAD9B3E02474608B003969C1 /* TimerModel.swift in Sources */,
 				AAD9B3BD24739617003969C1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -23,6 +23,7 @@ class TimerViewController: UIViewController {
     enum QuestionCase: String {
         case past = "What did you just work on?"
         case present = "What are you working on now?"
+        case future = "What are you going to work on?"
     }
     
     // MARK: Outlets
@@ -34,32 +35,69 @@ class TimerViewController: UIViewController {
     @IBOutlet weak var btnDoneList: UIButton!
     
     // MARK: Properties
-    var phase: Phase = Phase.work
-    var timerBtnState: TimerButtonState = TimerButtonState.start
-    var questionCase: QuestionCase = QuestionCase.present
+    var phase: Phase = .work
+    var timerBtnState: TimerButtonState = .start
+    var questionCase: QuestionCase = .future
+    var timerModel: TimerModel = TimerModel(duration: 25*60)
+    var timer:Timer?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        // May need to set these to something else (ex. loading app while timer is running)
+//        phase = .work
+//        timerBtnState = .start
+//        questionCase = .future
+//        timerModel = TimerModel(duration: 25*60)
+        
         phaseLabel.text = phase.rawValue
         questionLabel.text = questionCase.rawValue
         btnTimer.setTitle(timerBtnState.rawValue, for: .normal)
-        
+        updateTimerDisplay()
     }
     
     @IBAction func timerButtonPress(_ sender: UIButton) {
         switch timerBtnState {
         case .start:
+            print("start button press")
             timerBtnState = .pause
+            timerStart()
+            timerModel.start()
         case .pause:
+            print("pause button press")
             timerBtnState = .resume
+            updateTimerDisplay()
+            timerModel.pause()
+            timerStop()
         case .resume:
+            print("resume button press")
             timerBtnState = .pause
-//        default:
-//            fatalError("Unexpected button state: \(timerBtnState)")
+            updateTimerDisplay()
+            timerModel.resume()
+            timerStart()
+//        case .none:
+//            fatalError("Unexpected button state: \(String(describing: timerBtnState))")
         }
         btnTimer.setTitle(timerBtnState.rawValue, for: .normal)
     }
     
+    // MARK: Private Methods
+    func timerStart() {
+        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(timerTick), userInfo: nil, repeats: true)
+        timer?.tolerance = 0.1
+    }
+    
+    func timerStop() {
+        timer?.invalidate()
+    }
+    
+    func updateTimerDisplay() {
+        timerLabel.text = timerModel.getTimerString()
+    }
+    
+    @objc func timerTick() {
+        updateTimerDisplay()
+    }
 }
 
